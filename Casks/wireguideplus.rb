@@ -1,6 +1,6 @@
 cask "wireguideplus" do
-  version "1.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "1.3.0"
+  sha256 "30220a1080e7e8ac82e7fd92dff0356d95d14b49a712b127e14c2fc164279f0c"
 
   url "https://github.com/imonior/wireguide-plus/releases/download/v#{version}/WireGuidePlus-darwin-arm64.zip"
   name "WireGuide Plus"
@@ -40,15 +40,15 @@ cask "wireguideplus" do
 
   uninstall quit: "com.imonior.wireguide-plus"
 
-  zap launchctl: "com.wireguide.helper",
+  zap launchctl: "com.wireguideplus.helper",
       delete: [
-        "/Library/PrivilegedHelperTools/com.wireguide.helper",
-        "/Library/LaunchDaemons/com.wireguide.helper.plist",
+        "/Library/PrivilegedHelperTools/com.wireguideplus.helper",
+        "/Library/LaunchDaemons/com.wireguideplus.helper.plist",
       ],
       trash: [
-        "~/Library/Application Support/WireGuide",
+        "~/Library/Application Support/wireguideplus",
         "~/Library/Preferences/com.imonior.wireguide-plus.plist",
-        "/var/run/wireguide",
-        "/var/log/wireguide-helper.log",
+        "/var/run/wireguideplus",
+        "/var/log/wireguideplus-helper.log",
       ]
 end
