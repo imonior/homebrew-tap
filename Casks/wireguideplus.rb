@@ -40,15 +40,15 @@ cask "wireguideplus" do
 
   uninstall quit: "com.imonior.wireguide-plus"
 
-  zap launchctl: "com.wireguide.helper",
+  zap launchctl: "com.wireguideplus.helper",
       delete: [
-        "/Library/PrivilegedHelperTools/com.wireguide.helper",
-        "/Library/LaunchDaemons/com.wireguide.helper.plist",
+        "/Library/PrivilegedHelperTools/com.wireguideplus.helper",
+        "/Library/LaunchDaemons/com.wireguideplus.helper.plist",
       ],
       trash: [
-        "~/Library/Application Support/WireGuide",
+        "~/Library/Application Support/wireguideplus",
         "~/Library/Preferences/com.imonior.wireguide-plus.plist",
-        "/var/run/wireguide",
-        "/var/log/wireguide-helper.log",
+        "/var/run/wireguideplus",
+        "/var/log/wireguideplus-helper.log",
       ]
 end
