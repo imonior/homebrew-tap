@@ -1,8 +1,8 @@
 cask "netsense" do
-  version "0.2.3"
+  version "0.2.4"
   arch arm: "aarch64", intel: "x64"
-  sha256 arm: "616619149f6feb7426908e21d70f6d543e6f77194f7d5964a9ac8513080cbe0c",
-         intel: "2e8e1f2ad51e19e7fb81907e95b6da968597d96102e15b2865bbc2aa7a72340f"
+  sha256 arm: "8a0176a08da56ff101558520cc4e5aa610844d9b0325cb155df4da038cd40036",
+         intel: "81b2f6ebe0c4e0158f61ed450db3b262190e827f6590e9b98721757a4f603d2b"
 
   url "https://github.com/imonior/netsense/releases/download/v#{version}/NetSense_#{version}_#{arch}.dmg"
   name "NetSense"
