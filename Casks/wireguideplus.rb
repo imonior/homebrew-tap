@@ -7,8 +7,9 @@ cask "wireguideplus" do
   desc "Multi-tunnel automated WireGuard VPN client"
   homepage "https://github.com/imonior/wireguide-plus"
 
-  depends_on macos: :catalina
-
+  # No depends_on macos: here -- WireGuide Plus needs 10.15+, which is at or
+  # below Homebrew's own floor (Big Sur), so it is redundant and Homebrew 7.0
+  # rejects it outright ("Calling depends_on macos: :catalina is disabled!").
   app "wireguideplus.app"
 
   # Symlink the CLI onto PATH (Homebrew's bin), so users get a
