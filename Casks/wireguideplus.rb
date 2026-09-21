@@ -1,8 +1,8 @@
 cask "wireguideplus" do
-  version "2.3.0"
-  sha256 "e62bd5cad0c939ee9318af05ac46eab60df0e7c86bc07c9557ee2b7cfae89132"
+  version "2.3.1"
+  sha256 "a6cedd1af78f1a57c0185569e6d37d93589f0bb0e0a7d6ed9bc295f3b20b7e7c"
 
-  url "https://github.com/imonior/wireguide-plus/releases/download/v#{version}/WireGuidePlus-darwin-arm64.zip"
+  url "https://github.com/imonior/wireguide-plus/releases/download/v#{version}/WireGuidePlus-#{version}-darwin-arm64.zip"
   name "WireGuide Plus"
   desc "Multi-tunnel automated WireGuard VPN client"
   homepage "https://github.com/imonior/wireguide-plus"
