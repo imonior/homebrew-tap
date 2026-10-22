@@ -1,6 +1,6 @@
 cask "wireguideplus" do
-  version "2.7.3"
-  sha256 "84d28b8fd93a6981476b1b4c4d695162365caca6bd72cf6d771ff2e76b771048"
+  version "2.8.0"
+  sha256 "8303090b0dc09eaaf348ae77e1f2aceaf4f08914fb002fedda9eb5fcc2607c32"
 
   url "https://github.com/imonior/wireguide-plus/releases/download/v#{version}/WireGuidePlus-#{version}-darwin-arm64.zip"
   name "WireGuide Plus"
